@@ -1,0 +1,1 @@
+Ik heb chatgpt gebruikt om een logo voor mij te genereren
