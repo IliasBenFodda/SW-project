@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1f6feb;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.welkom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #1f6feb;
+  color: #ffffff;
+}
+
+.welkom h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welkom p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.producten {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-naam {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-prijs {
+  font-size: 15px;
+  color: #1f6feb;
+  font-weight: 700;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #111827;
+  color: #ffffff;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
+}
