@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
+h1,
+h2 {
+  font-family: "Lato", sans-serif;
+}
 body {
   background-color: #f4f6f8;
   color: #222;
@@ -89,7 +92,9 @@ nav a:hover::after {
   width: 220px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   text-decoration: none;
   color: #222;
 }
@@ -201,7 +206,8 @@ footer p {
     flex-direction: column;
   }
 
-  .info p, .info h2 {
+  .info p,
+  .info h2 {
     text-align: center;
   }
 
@@ -313,7 +319,7 @@ footer p {
   min-width: 200px;
   list-style: none;
   padding: 10px 0;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   display: none;
   z-index: 10;
