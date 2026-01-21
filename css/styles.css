@@ -79,7 +79,7 @@ nav a:hover::after {
   padding: 60px 40px;
 }
 
-.product {
+.product a {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -90,6 +90,8 @@ nav a:hover::after {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #222;
 }
 
 .korting {
@@ -206,4 +208,129 @@ footer p {
   header {
     flex-direction: column;
   }
+}
+.product-detail {
+  padding: 70px 40px;
+  background-color: #f4f6f8;
+}
+
+.product-detail-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-detail-afbeelding img {
+  width: 320px;
+  border-radius: 14px;
+}
+
+.product-detail-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.detail-prijs {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f6feb;
+  margin-bottom: 20px;
+}
+
+.detail-beschrijving {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.specificaties {
+  list-style: none;
+}
+
+.specificaties li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.reviews {
+  padding: 60px 40px;
+  background-color: #ffffff;
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  background-color: #f4f6f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review-tekst {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.mens {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.gerelateerd {
+  padding: 60px 40px;
+}
+
+.gerelateerd h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .product-detail-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .specificaties {
+    padding: 0;
+  }
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 200px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  display: none;
+  z-index: 10;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f4f6f8;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
