@@ -80,6 +80,7 @@ nav a:hover::after {
 }
 
 .product {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,8 +92,21 @@ nav a:hover::after {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.korting {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  color: #ffffff;
+  z-index: 2;
+  background-color: #dc2626;
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.35);
+}
+
 .product:hover {
-  transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -114,6 +128,54 @@ nav a:hover::after {
   font-weight: 700;
 }
 
+.wie-ben-ik {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.verzend-info {
+  padding: 80px 40px;
+  background-color: #f4f6f8;
+}
+
+.inhoud {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+.foto-mezelf {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-mezelf img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -131,64 +193,17 @@ footer p {
   font-size: 14px;
   opacity: 0.8;
 }
-.detail-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  padding: 80px 40px;
-}
 
-.detail-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-}
+@media (max-width: 700px) {
+  .inhoud {
+    flex-direction: column;
+  }
 
-.detail-image img {
-  width: 260px;
-}
+  .info p, .info h2 {
+    text-align: center;
+  }
 
-.detail-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-
-.detail-info h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.detail-prijs {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1f6feb;
-  margin-bottom: 20px;
-}
-
-.detail-beschrijving {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-}
-.product-sticker {
-  position: relative;
-}
-
-.sticker {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background-color: #e11d48;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 6px 12px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  header {
+    flex-direction: column;
+  }
 }
