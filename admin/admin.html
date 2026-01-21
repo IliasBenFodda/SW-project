@@ -1,32 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/admin.css">
-    <title>Document</title>
-</head>
-<body>
-   
-         <div class="login-container">
-    <h2>Inloggen</h2>
-    <form>
-      <label for="username">Loginnaam:</label>
-      <input type="text" id="username" name="username" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="admin-header">
+      <img src="../img/logo.png" alt="Logo webshop" />
+      <nav class="admin-navigatie">
+        <ul>
+          <li><a href="admin.html" class="actief">LOG IN</a></li>
+          <li><a href="productinventaris.html">PRODUCTINVENTARIS</a></li>
+          <li><a href="product.html">TOEVOEGEN/AANPASSEN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="admin-welkom">
+      <h1>LOG IN</h1>
+    </div>
+    <div class="login-container">
+      <form>
+        <label for="username">Loginnaam:</label>
+        <input type="text" id="username" name="username" required />
 
-      <label for="password">Wachtwoord:</label>
-      <input type="password" id="password" name="password" required>
+        <label for="password">Wachtwoord:</label>
+        <input type="password" id="password" name="password" required />
 
-      <button type="submit">Login</button>
+        <button type="submit">Login</button>
 
-      <div class="options">
-        <a href="#" class="forgot-password">Wachtwoord vergeten?</a>
-        <hr>
-        <div class="registreer"> Nog geen account?</div>
-        <a href="#" class="register-button">Registreer hier</a>
-      </div>
-    </form>
-  </div>
- 
-</body>
+        <div class="options">
+          <a href="#" class="forgot-password">Wachtwoord vergeten?</a>
+          <hr />
+          <div class="registreer">Nog geen account?</div>
+          <a href="#" class="register-button">Registreer hier</a>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

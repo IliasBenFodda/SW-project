@@ -131,3 +131,64 @@ footer p {
   font-size: 14px;
   opacity: 0.8;
 }
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 40px;
+}
+
+.detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image img {
+  width: 260px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.detail-info h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.detail-prijs {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f6feb;
+  margin-bottom: 20px;
+}
+
+.detail-beschrijving {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+.product-sticker {
+  position: relative;
+}
+
+.sticker {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #e11d48;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
